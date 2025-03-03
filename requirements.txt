@@ -1,0 +1,14 @@
+alembic==1.14.1
+anyio==4.5.2
+fastapi==0.95.2
+greenlet==3.1.1
+openpyxl==3.1.2
+pandas==2.0.3
+psycopg2==2.9.10
+pydantic==1.10.8
+pydantic-core==2.3.0
+pytest==8.3.5
+python-multipart==0.0.6
+SQLAlchemy==2.0.19
+starlette==0.27.0
+uvicorn==0.22.0

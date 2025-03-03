@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+.vscode/
+*.log
+.pytest_cache
+
+# OS files
+.DS_Store
+Thumbs.db
+employees.db
+.venv/
+alembic/versions/
