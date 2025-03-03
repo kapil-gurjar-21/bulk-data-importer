@@ -35,7 +35,7 @@ excel-db-api/
 ## Installation
 
 1. Clone the repository: 
-`git clone https://github.com/your-repo/excel-db-api.git`
+`git clone https://github.com/kapil-gurjar-21/bulk-data-importer.git`
 
 2. Create a virtual environment: 
 `python -m venv venv`
