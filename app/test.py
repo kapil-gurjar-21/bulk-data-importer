@@ -18,51 +18,6 @@ def mock_db():
 def mock_file():
     return MagicMock()
 
-
-import io
-import pandas as pd
-from unittest.mock import MagicMock, patch
-from app.services import process_bulk_upload
-from sqlalchemy.orm import Session
-
-# @patch('pandas.read_excel')
-# def test_process_bulk_upload_success(mock_read_excel, mock_db, mock_file):
-#     # Prepare mock data for the DataFrame
-#     mock_df = pd.DataFrame({
-#         'COMPANY_NAME': ['Company A', 'Company B'],
-#         'EMPLOYEE_ID': [1, 2],
-#         'FIRST_NAME': ['John', 'Jane'],
-#         'LAST_NAME': ['Doe', 'Smith'],
-#         'PHONE_NUMBER': ['1234567890', '0987654321'],
-#         'SALARY': [50000, 60000],
-#         'MANAGER_ID': [None, 1],
-#         'DEPARTMENT_ID': [1, 2]
-#     })
-#     # Simulate the Excel file content
-#     mock_read_excel.return_value = mock_df
-    
-#     # Mock database queries and operations
-#     mock_db.query.return_value.filter.return_value.all.return_value = [
-#         MagicMock(company_name='Company A', id=1),
-#         MagicMock(company_name='Company B', id=2)
-#     ]
-    
-#     # Mock the file's `read` method to return byte data
-#     mock_file.read.return_value = io.BytesIO(b"some binary data representing an Excel file").read()
-
-#     # Call the function
-#     result = process_bulk_upload(mock_file, mock_db)
-
-#     # Assertions
-#     assert result['status'] == 'success'
-#     assert result['message'] == 'Successfully imported 2 employee records.'
-
-#     # Verify database operations
-#     mock_db.bulk_insert_mappings.assert_called_once()
-#     mock_db.commit.assert_called()
-
-
-
 @pytest.fixture
 def mock_db():
     """Create a mock database session."""
